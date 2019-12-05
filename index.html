@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LOCO</title>
     <link rel="stylesheet" href="./font.css">
@@ -11,17 +11,16 @@
 <body>
     <!-- FIRST SECTION -->
     <section class="first-section section">
-        <header class="first-section__header header"> 
+        <header class="first-section__header header">
             <h1 class="header__logo">
-                LOCO
+                 LOCO
             </h1>
             <div class="header__select-lang">
                 <select>
-                    <option value="RU">RU</option>
-                    <option value="EN">EN</option>
-                </select>
-            </div>
-
+                    <option class="header__select-lang_item" value="RU">RU</option>
+                    <option class="header__select-lang_item" value="EN">EN</option>
+                </select>                   
+            </div> 
             <div class="header__menu"></div>
         </header>
         <div class="first-section__content content">
@@ -37,18 +36,23 @@
                     Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
                 </p>
                 <div class="desc__buttons buttons">
-                    <a class="buttons__item button">Читать дальше</a>
-                    <a class="buttons__item more">Другие предложения</a>
+                    <a href="#" class="buttons__item button">Читать дальше</a>
+                    <a href="#" class="buttons__item link">
+                        <div class="link__name">Другие предложения</div>
+                        <div class="link__arrow">
+                            <span class="arrow"></span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
         <footer class="first-section__footer footer">
-            <address class="footer__adress adress">
-                <a href="#" class="adress__item adress__item_insta"><img src="./img/first_section/instagram.png" alt="instagram"></a>
-                <a href="#" class="adress__item adress__item_vk"><img src="./img/first_section/vk.png" alt="vk"></a>
-                <a href="#" class="adress__item adress__item_facebook"><img src="./img/first_section/facebook.png" alt="facebook"></a>
+            <address class="footer__adress address">
+                <a href="#"><div  class="address__item"><img src="./img/first_section/instagram.png" alt="instagram"></div></a>
+                <a href="#"><div  class="address__item"><img src="./img/first_section/vk.png" alt="vk"></div></a>
+                <a href="#"><div  class="address__item"><img src="./img/first_section/facebook.png" alt="facebook"></div></a>
             </address>
-            <img src="./img/first_section/scrooll.png" alt="scrooll" class="footer__scroll">
+            <div class="footer__scroll"></div>
         </footer>
     </section>
 
@@ -65,7 +69,7 @@
                         Кожаный клатч
                     </h2>
                     <h3 class="desc__subtitle">осенняя коллекция</h3>
-                    <p class="desc__text">
+                    <p class="desc__text desc__text_opacity">
                         Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. 
                         Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
                     </p>
@@ -80,19 +84,23 @@
                     </div>
 
                     <div class="desc__buttons buttons">
-                        <div class="buttons__counter button">
+                        <div class="buttons__item button">
                           <button type="button" class="button__minus">-</button>
                           <input type="number" min="0" value="1" class="button__input">
-                          <button type="button" class="button__plus">+</button>
+                          <button type="button" class="button__plus ">+</button>
                         </div>
-                        <div  class="buttons__add button">
-                          <a href="#">Добавить в корзину</a>
-                        </div>
+                        <a href="#"  class="buttons__item button">Добавить в корзину</a>
+                        
                     </div>
 
                 </div>
             </div>
-            <a class="desc__item more">Другие товары на Loco.com</a>
+            <a href="#" class="link">
+                <div class="link__name">Другие товары на Loco.com</div>
+                <div class="link__arrow">
+                    <span class="arrow"></span>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -108,24 +116,27 @@
                         Serene Total Look
                     </h2>
                     <h3 class="desc__subtitle">осенняя коллекция</h3>
-                    <p class="desc__text">
+                    <p class="desc__text desc__text_opacity">
                         Джинсы, свитер, обувь.
                         В комплект также входит пакет ароматного чая и кружка.
                     </p>
 
                     <div class="desc__buttons buttons">
-                        <div class="buttons__counter button">
+                        <div class="buttons__item  button">
                           <button type="button" class="button__minus">-</button>
                           <input type="number" min="0" value="1" class="button__input">
                           <button type="button" class="button__plus">+</button>
                         </div>
-                        <div  class="buttons__add button">
-                          <a href="#">Добавить в корзину</a>
-                        </div>
+                        <a href="#"  class="buttons__item button">Добавить в корзину</a>
                     </div>
                      
                 </div>
-                <a class="desc__item more">Другие товары на Loco.com</a>
+                <a href="#" class="link">
+                    <div class="link__name">Другие товары на Loco.com</div>
+                    <div class="link__arrow">
+                        <span class="arrow"></span>
+                    </div>
+                </a>
             </div>
         </div>
 

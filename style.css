@@ -1,3 +1,212 @@
-* {
-    font-family: 'Montserrat';  /* проверка подключились ли шрифты */
+/* COMMON */
+body {
+    margin: 0;
+}
+.section {
+    height: 100vh; 
+    position: relative; 
+}
+
+/* FIRST SECTION */
+.first-section {
+    background: linear-gradient(to right, #000 35%, #fff 0%);
+}
+
+.header__menu {
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 5%
+}
+.header__menu,
+.header__menu::after {
+    width: 35px;
+    height: 4px;
+    background: #000;
+}
+.header__menu::after {
+    content: '';
+    display: block;
+    margin: 8px 0;
+}
+.header__logo,
+.header__select-lang > select {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+}
+.header__logo {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 30px;
+}
+.header__select-lang > select{
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    position: relative;
+    width: 70px;
+    cursor: pointer;
+    outline: none;
+}
+.header__select-lang_item {
+    color: #000;
+}
+
+.header__select-lang {
+    position: absolute;
+    right: 66%;
+    top: 5%;
+    overflow: hidden; 
+    width: 50px;
+    background: url(./img/first_section/select-vector.png) no-repeat right;
+}
+.first-section__content {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 280px);
+}
+
+.desc {
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 45%;
+}
+.desc .desc__title {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 82px;
+    margin-bottom: 15px; 
+}
+.desc .desc__text {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;  
+    padding: 10px 0;
+    margin-bottom: 35px;
+    max-width: 460px;
+}
+.desc__buttons {
+    display: flex;
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.button,
+.link {
+    color: #000;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;    
+}
+.link__name {
+    margin-right: 20px;
+  }
+.button {
+    background: inherit;
+    padding: 14px 40px;
+    border: 2px #000 solid;
+    margin-right: 30px;
+} 
+.link__arrow {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: relative;
+}
+.link__arrow::after {
+    content: '';
+    display: block;
+    width: 1.5px;
+    height: 10px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    transform: rotate(-45deg) translate(4px, -6px);
+}
+.link__arrow::before {
+    content: '';
+    display: block;
+    width: 1.5px;
+    height: 10px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    transform: rotate(45deg) translate(-2px, 0);
+}
+.address {
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+.address .address__item {
+    width: 43px;
+    height: 43px;
+    line-height: 3em;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 12px;
+    
+} 
+.first-section__footer .footer__adress {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.first-section__footer .footer__scroll {
+    background: url(./img/first_section/scrooll.png) no-repeat;
+    width: 30px;
+    height: 48px;
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: 5%;
+}
+
+/* MOBILE */
+
+@media (max-width: 481px) {
+    .first-section {
+        background: url(./img/first_section/new_collection_mobile.png) no-repeat;
+        background-size: cover;
+    }
+    .header__logo {
+        color: #000;
+    }
+   .header__select-lang {
+       display: none;
+   }
+   .first-section__content {
+       position: absolute;
+       left: 5%;
+       bottom: 0;
+   }
+
+   .first-section__content .content__img,
+   .first-section__content .desc__text,
+   .first-section__content .desc__buttons {
+       display: none;
+   } 
+   .first-section__content  .desc__title {
+       font-size: 50px;
+       line-height: 51px;   
+   }
+
+  
+   .first-section__footer {
+       display: none;
+}
 }
