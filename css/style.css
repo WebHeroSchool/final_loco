@@ -57,7 +57,7 @@ body {
 .header__select-lang {
     overflow: hidden; 
     width: 50px;
-    background: url(./img/first_section/select-vector.png) no-repeat right;
+    background: url(../img/first_section/select-vector.png) no-repeat right;
 } 
 /* FIRST SECTION */
 .first-section {
@@ -164,7 +164,7 @@ body {
     padding: 0 40px;
 }
 .first-section__footer .footer__scroll {
-    background: url(./img/first_section/scrooll.png) no-repeat;
+    background: url(../img/first_section/scrooll.png) no-repeat;
     width: 30px;
     height: 48px;
     align-self: center;
@@ -191,7 +191,7 @@ body {
        display: none;
    }
     .first-section {
-        background: url(./img/first_section/new_collection_mobile.png) no-repeat;
+        background: url(../img/first_section/new_collection_mobile.png) no-repeat;
         background-size: cover;
         height: 527px;
         justify-content: flex-end;
@@ -206,7 +206,7 @@ body {
    .first-section__content::after {
        content: '';
        display: block;
-       background: url(./img/first_section/scroll-mobile.png) no-repeat;
+       background: url(../img/first_section/scroll-mobile.png) no-repeat;
        background-size: contain;
        width: 28px;
        height: 15px;
