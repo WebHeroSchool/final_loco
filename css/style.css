@@ -143,8 +143,7 @@ body {
 }
 .address {
     display: flex;
-    position: absolute;
-    left: 0;
+    flex-basis: calc(50% - 60px);
 }
 .address .address__item {
     width: 43px;
@@ -158,7 +157,6 @@ body {
 } 
 .first-section__footer {
     display: flex;
-    justify-content: space-around;
 }
 .first-section__footer .footer__adress {
     padding: 0 40px;
@@ -167,12 +165,28 @@ body {
     background: url(../img/first_section/scrooll.png) no-repeat;
     width: 30px;
     height: 48px;
-    align-self: center;
 }
 
+@media (max-width: 1050px) {
+    .content__img_new {
+        width: 90%;
+    }
+    .first-section__content  .desc__title {
+        font-size: 60px;
+        line-height: 61px;   
+    }   
+    .button,
+    .link {
+    font-size: 10px; 
+}
+    .button {
+        padding: 9px 26px;
+        margin-right: 20px;
+    }
+}
 /* MOBILE */
 
-@media (max-width: 961px) {
+@media (max-width: 920px) {
     .header {
         height: 69px;
     }
