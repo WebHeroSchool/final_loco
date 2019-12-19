@@ -1,6 +1,7 @@
 /* COMMON */
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1440px
 }
 
 /* HEADER */
@@ -73,7 +74,8 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.desc {
+.desc,
+.link {
     font-family: 'Montserrat';
     font-style: normal;
     width: 45%;
@@ -367,6 +369,24 @@ body {
     .buttons {
         padding: 0;
     }
+    
+    .third-section__content .link {
+        font-size: 15px;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 90%;
+        line-height: 20px;
+    }
+    .content__img_clothes {
+        width: 700px;
+        height: 500px;
+        top: 5%;
+        left: calc(50% - 175px);
+    } 
+    .third-section,
+    .third-section__footer {
+        background: linear-gradient(to right, #EBE3D8 100px, #000 100px, #000 141px, #EBE3D8 141px);
+    }
 }
 @media (max-width: 920px) {  
     /* first */
@@ -422,22 +442,21 @@ body {
     .second-section {
         height: 600px;
     }
-    .content__img_big-clutch {
-        width: 225px;
-        height: 300px;
-    }
     .content__img_small-clutch {
         display: none;
-}
+    } 
     .second-section .content {
-        flex-direction: column;
         justify-content: space-around;
+    }
+    .content__img_big-clutch {
+        width: 80%;
+        height: 80%;
     }
     .second-section .link {
         display: none;
     }
     .content__wrap-text {
-        width: 320px;
+        width: 80%;
     }
     .desc .desc__title {
         padding: 0;
@@ -476,37 +495,23 @@ body {
     .third-section {
         height: 580px;
         padding-bottom: 30px;
-        background: linear-gradient(to right, #EBE3D8 100px, #000 100px, #000 141px, #EBE3D8 141px);
     }
     .third-section__content .content__container {
         width: 305px;
         height: 195px;
         margin-bottom: 38px;
     }
-    .third-section__content .link {
-        font-size: 15px;
-        flex-direction: column;
-        align-items: flex-end;
-        width: 90%;
-        line-height: 20px;
-    }
     .third-section__content .link__name,
     .third-section__content .link__arrow {
         white-space: normal;
-        width: 130px;
+        width: 150px;
         margin: 0;
     }
-    .content__img_clothes {
-        width: 351px;
-        height: 261px;
-        top: 5%;
-        left: calc(50% - 175px);
-    } 
     .third-section__content .content__wrap-text {
         align-self: flex-end;
+        width: 60%;
      }
-
-    .third-section__content .content__container {
+     .third-section__content .content__container {
         justify-content: space-around; 
     }
     .third-section__content .desc__text {
@@ -517,4 +522,20 @@ body {
     .footer {
         display: none;
     }
+}
+
+
+@media (max-width: 640px) {
+    .second-section .content {
+        flex-direction: column;
+    }
+    .content__img_big-clutch {
+        width: 225px;
+        height: 300px;
+    }
+    
+    .content__img_clothes {
+        width: 351px;
+        height: 261px;
+    } 
 }
