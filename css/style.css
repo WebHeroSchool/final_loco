@@ -455,7 +455,7 @@ body {
     .second-section .link {
         display: none;
     }
-    .content__wrap-text {
+    .second-section .content__wrap-text {
         width: 80%;
     }
     .desc .desc__title {
@@ -509,7 +509,6 @@ body {
     }
     .third-section__content .content__wrap-text {
         align-self: flex-end;
-        width: 60%;
      }
      .third-section__content .content__container {
         justify-content: space-around; 
@@ -538,4 +537,7 @@ body {
         width: 351px;
         height: 261px;
     } 
+    .third-section__content .content__wrap-text {
+       margin-right: 17%;
+     }
 }
