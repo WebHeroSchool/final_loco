@@ -372,9 +372,8 @@ body {
     
     .third-section__content .link {
         font-size: 15px;
-        flex-direction: column;
-        align-items: flex-end;
-        width: 90%;
+        align-items: center;
+        width: 100%;
         line-height: 20px;
     }
     .content__img_clothes {
@@ -501,6 +500,10 @@ body {
         height: 195px;
         margin-bottom: 38px;
     }
+    .third-section__content .link {
+        flex-direction: column;
+        align-items: flex-end;
+    }
     .third-section__content .link__name,
     .third-section__content .link__arrow {
         white-space: normal;
@@ -538,6 +541,6 @@ body {
         height: 261px;
     } 
     .third-section__content .content__wrap-text {
-       margin-right: 17%;
+       margin: 0 auto;
      }
 }
