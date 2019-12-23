@@ -391,6 +391,7 @@ body {
     /* first */
     .header {
         height: 69px;
+        background: #f6f6f4;
     }
     .header__menu {
         padding: 30px 20px;
